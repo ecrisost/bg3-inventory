@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+    <head> 
+        <meta charset="UTF-8" />
+        <title>Inventory</title>
+        <script src="../bg3-inventory/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="top"></div>
+                <div class="right"></div>
+                <div class="left"></div>
+                <div class="bottom"></div>
+            </div> 
+        </div>
+        <img src="../bg3-inventory/assets/inventory-bg.jpg" width="1280" height="667"/>
+    </body>
+</html>
+<style>
+    img {
+        position:absolute;
+        opacity: 0.3;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    body * {
+        box-sizing: border-box;
+    }
+
+    .container {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        border: 5px solid red;
+        display: grid;
+        grid-template-columns: 1fr 560px;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .top{
+        background: purple;
+    }
+
+    .bottom {
+        background: yellow;
+    }
+
+    .left {
+        background: blue;
+    }
+
+    .right {
+        background: green;
+
+    }
+
+
+</style>
